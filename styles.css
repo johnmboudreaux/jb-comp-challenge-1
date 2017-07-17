@@ -1,0 +1,220 @@
+/** {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}*/
+
+
+
+body {
+  background-image: url(/Users/JhnBdrx/code/turing/turing_mod1/static-comp1/images/outer-space.jpg);
+}
+
+.box-container {
+  float: left;
+  height: 100vh;
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.mobile {
+  display: none;
+}
+
+.box {
+  height: 33.333%;
+  width: 33.333%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon {
+  height: 105px;
+  width: auto;
+}
+
+p {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.box:hover {
+  opacity: 0.5;
+}
+
+.heading-box:hover {
+  opacity: 0.5;
+}
+
+.heading-box {
+  background-repeat: no-repeat;
+  background-color: #a10724;
+  height: 33.333%;
+  width: 66.666%;
+  /*padding-bottom: 18px;*/
+}
+
+.heading-box-icon {
+  margin: 80px 20px 0 0;
+  float: right;
+  /*display: block;*/
+  width: 115px;
+  /*margin: auto;*/
+}
+
+.heading-box-title {
+  color: #fff;
+  font-size: 17px;
+  padding: 30px 0 0 20px;
+  display: inline-block;
+}
+
+.text-line1,
+.text-line2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.text-line1 {
+  margin: 15px;
+}
+
+.text-line2 {
+  margin: 0 0 20px 15px;
+}
+
+button {
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+  width: 105px;
+  height: 40px;
+  margin: 0 0 10px 15px;
+}
+
+.profile {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-color: #f4f2f4;
+
+}
+
+.experience {
+  background-color: #f2d18c;
+}
+
+.education {
+  background-color: #85b7c1;
+}
+
+.blog {
+  background-color: #d8c9ab;
+}
+
+.social-menu {
+  background-color: #afbf7b;
+}
+
+.contact {
+  background-color: #8b6f56;
+}
+
+.portfolio {
+  background-color: #6fbbdc;
+}
+
+
+.photo-container {
+  background-image: url(images/SevenWondersOfTheWorld.png);
+  /*background-image: url(images/SevenWondersOfTheWorld.png);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  width: 45%;
+  float: right;
+}
+
+.photo-container img {
+  height: 100vh;
+}
+
+@media (max-width: 800px) {
+  .main-content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+  .photo-container {
+    height: 575px;
+}
+  .box-container,
+  .photo-container {
+    float: none;
+    width:100%
+}
+  .box {
+
+}}}
+
+@media screen and (max-width: 800px) {
+  .box-container,
+  .photo-container {
+    float: none;
+    width:100%
+  }
+  button {
+    margin: 3px;
+  }
+}
+
+@media (max-width: 550px) {
+  .photo-container {
+    overflow: hidden;
+  }
+  .photo-container img {
+    width: 100%;
+  }
+  .box-container {
+    flex-direction: column;
+    display: block;
+    margin: auto;
+  }
+  .box {
+    width: 100%;
+    height: 82px;
+  }
+  .heading-box {
+    width: 100%;
+    height: 220px;
+  }
+  .icon {
+    height: 75px;
+    width: auto;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+  button {
+    width: 70px;
+    height: 30px;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-container img {
+    width: 100%;
+  }
+}
