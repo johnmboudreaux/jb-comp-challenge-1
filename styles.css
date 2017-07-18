@@ -1,8 +1,8 @@
-/** {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}*/
+}
 
 
 
@@ -19,10 +19,6 @@ body {
   flex-direction: row;
 }
 
-.mobile {
-  display: none;
-}
-
 .box {
   height: 33.333%;
   width: 33.333%;
@@ -34,12 +30,12 @@ body {
 }
 
 .icon {
-  height: 105px;
+  height: 55px;
   width: auto;
 }
 
 p {
-  font-size: 20px;
+  font-size: .75em;
   text-transform: uppercase;
   margin-top: 15px;
 }
@@ -53,168 +49,174 @@ p {
 }
 
 .heading-box {
-  background-repeat: no-repeat;
-  background-color: #a10724;
+  display: flex;
+  background-color: #586f5c;
   height: 33.333%;
   width: 66.666%;
-  /*padding-bottom: 18px;*/
-}
-
-.heading-box-icon {
-  margin: 80px 20px 0 0;
-  float: right;
-  /*display: block;*/
-  width: 115px;
-  /*margin: auto;*/
+  flex-direction: column;
 }
 
 .heading-box-title {
   color: #fff;
-  font-size: 17px;
-  padding: 30px 0 0 20px;
-  display: inline-block;
+  font-size: 1.25em;
+  margin: 27px 0 0 5px;
 }
 
 .text-line1,
 .text-line2 {
   color: #fff;
   font-weight: 400;
-  font-size: 15px;
-  padding: 10px;
+  font-size: .75em;
 }
 
 .text-line1 {
-  margin: 15px;
+  margin: 15px 15px 15px 5px;
 }
 
 .text-line2 {
-  margin: 0 0 20px 15px;
+  margin: 0 0 15px 5px;
 }
 
 button {
-  color: #fff;
   background: none;
   border: 2px solid #fff;
-  width: 105px;
+  color: #fff;
+  display: block;
+  font-size: .75em;
   height: 40px;
-  margin: 0 0 10px 15px;
+  margin: 10px 0 10px 5px;
+  width: 105px;
 }
 
-.profile {
+.augustus {
   background-image: url();
   background-repeat: no-repeat;
   background-color: #f4f2f4;
 
 }
 
-.experience {
+.pyramid {
   background-color: #f2d18c;
 }
 
-.education {
+.lighthouse {
   background-color: #85b7c1;
 }
 
-.blog {
+.temple {
   background-color: #d8c9ab;
 }
 
-.social-menu {
+.mausoleum {
   background-color: #afbf7b;
 }
 
-.contact {
+.constantine {
   background-color: #8b6f56;
 }
 
-.portfolio {
+.gardens {
   background-color: #6fbbdc;
 }
 
-
 .photo-container {
-  background-image: url(images/SevenWondersOfTheWorld.png);
-  /*background-image: url(images/SevenWondersOfTheWorld.png);*/
-  background-repeat: no-repeat;
+  background: url("images/SevenWondersOfTheWorld.png");
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
   height: 100vh;
   width: 45%;
   float: right;
 }
 
-.photo-container img {
-  height: 100vh;
+.three-dot {
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
 }
 
-@media (max-width: 800px) {
-  .main-content {
-    display: flex;
-    flex-direction: column-reverse;
+.right-arrow,
+.left-arrow {
+  height: 55px;
+  width: auto;
 }
-  .photo-container {
-    height: 575px;
-}
-  .box-container,
-  .photo-container {
-    float: none;
-    width:100%
-}
-  .box {
 
-}}}
+.right-arrow {
+  align-self: center;
+}
 
-@media screen and (max-width: 800px) {
-  .box-container,
-  .photo-container {
-    float: none;
-    width:100%
+.left-arrow {
+  align-self: center;
+}
+
+
+@media (max-width: 317px) {
+  .heading-box-title {
+    font-size: 1.25em;
+    font-weight: 500;
   }
+
+  .text-line1,
+  .text-line2 {
+    font-size: .75em
+  }
+
   button {
-    margin: 3px;
+    margin-top: 10px;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 450px) {
   .photo-container {
     overflow: hidden;
   }
-  .photo-container img {
-    width: 100%;
-  }
+
   .box-container {
     flex-direction: column;
     display: block;
     margin: auto;
+    height: 50%;
   }
+
   .box {
     width: 100%;
     height: 82px;
   }
+
   .heading-box {
     width: 100%;
-    height: 220px;
+    height: 250px;
   }
+
   .icon {
     height: 75px;
     width: auto;
   }
-  .mobile {
-    display: block;
-  }
 
-  .desktop {
-    display: none;
-  }
   button {
     width: 70px;
     height: 30px;
+    margin-top: 10px;
+  }
 
+  p {
+    margin: 0;
   }
 }
 
-@media (min-width: 1200px) {
-  .photo-container img {
-    width: 100%;
+@media (max-width: 760px) {
+  .box-container,
+  .photo-container {
+    float: none;
+    width:100%;
+  }
+  .icon  {
+    height: 45px;
+    width: auto;
+  }
+  .text-line2 {
+    margin-bottom: 15px;
   }
 }
